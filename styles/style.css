@@ -14,23 +14,28 @@ body {
 
 .influencer-details {
   display: flex;
-  margin-top: 10%;
-  margin-left: 10%;
+  margin: 10% 0 6% 10%;
 }
 .influenc-details {
   width: 45%;
+  padding-right: 8%;
 }
 .influenc-title {
-  font-size: 40px;
+  font-size: 3em;
   font-weight: 700;
   color: #393838;
 }
 .influenc-thumnail {
   font-size: 16px;
   font-weight: 700;
+  margin-top: -7%;
+  margin-bottom: 6%;
 }
 .preebooking {
   text-decoration: none;
+  line-height: 5px;
+  font-family: 18px;
+  font-weight: 500;
   color: white;
   background-color: rgb(249, 37, 107);
   padding: 10px 30px;
@@ -38,5 +43,33 @@ body {
 }
 .fa-arrow-right.icon {
   color: white;
-  font-weight: 700;
+  padding-left: 3px;
+}
+.influenc-banner {
+  width: 40%;
+}
+
+/*------------------------ 
+    online portal sections
+------------------------- */
+.online-portal {
+  margin-bottom: 6%;
+}
+hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(181, 194, 184, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  margin: 0 20%;
+}
+.online-portal-author {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin: 2% 15%;
 }
