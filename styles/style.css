@@ -4,7 +4,6 @@
 /* Common Styles and Utilitys */
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f3f1ff;
   margin: 0;
 }
 
@@ -53,7 +52,7 @@ body {
     online portal sections
 ------------------------- */
 .online-portal {
-  margin-bottom: 6%;
+  margin-bottom: 10%;
 }
 hr {
   border: 0;
@@ -71,5 +70,63 @@ hr {
   grid-template-columns: repeat(7, 1fr);
   justify-items: center;
   align-items: center;
-  margin: 2% 15%;
+  margin: 2% 12%;
+}
+
+/*----------------------
+   Popular Collection
+------------------------ */
+.collection-title {
+  color: #393838;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.products {
+  width: 1000px;
+  margin-left: 14%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.product-detail {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  box-shadow: 15px 15px 80px rgba(0, 0, 0, 0.05);
+}
+.product-banner img {
+  width: 100%;
+}
+.product-title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+.product-price {
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.fa-star.filled,
+.fa-star-half-stroke.empty {
+  font-size: 12px;
+  color: rgb(248, 150, 21);
+}
+span {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(103, 103, 103);
+  margin: 0;
+}
+.product-description {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(103, 103, 103);
+  margin-top: 5px;
 }
