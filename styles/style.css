@@ -40,8 +40,7 @@ body {
   padding: 10px 30px;
   border-radius: 30px;
 }
-.fa-arrow-right.icon {
-  color: white;
+.fa-arrow-right.icon-1 {
   padding-left: 3px;
 }
 .influenc-banner {
@@ -112,7 +111,6 @@ hr {
   margin-top: 0;
   margin-bottom: 2px;
 }
-
 .fa-star.filled,
 .fa-star-half-stroke.empty {
   font-size: 12px;
@@ -129,4 +127,50 @@ span {
   font-weight: 600;
   color: rgb(103, 103, 103);
   margin-top: 5px;
+}
+.see-more-section {
+  text-align: end;
+  margin-top: 2%;
+  margin-right: 12%;
+}
+.see-more {
+  text-decoration: none;
+  color: rgb(249, 37, 107);
+  font-weight: 600;
+}
+
+/* Future products sections */
+
+.future-products {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.future-product-banner {
+  margin-left: 12%;
+  margin-right: 5%;
+}
+.future-product-banne img {
+  width: 30%;
+}
+.future-product-info {
+  width: 40%;
+}
+.future-product-title {
+  font-size: 2em;
+  font-weight: 700;
+}
+.future-product-description {
+  font-size: 16px;
+  font-weight: 700;
+  color: #777777;
+  margin-bottom: 30px;
+}
+.join-buttun {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(249, 37, 107);
+  border-radius: 2px;
+  padding: 10px 30px;
 }
