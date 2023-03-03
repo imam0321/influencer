@@ -174,3 +174,22 @@ span {
   border-radius: 2px;
   padding: 10px 30px;
 }
+
+/*----------------------
+   Contract sections 
+------------------------*/
+
+.contracts {
+  text-align: center;
+  line-height: 15px;
+  color: white;
+  background-color: rgb(15, 12, 35);
+  padding: 3%;
+}
+.contract-title {
+  font-size: 22px;
+}
+.contract-thumnail {
+  font-size: 14px;
+  font-weight: 500;
+}
