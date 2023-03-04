@@ -7,6 +7,36 @@ body {
   margin: 0;
 }
 
+/*------------------------ 
+    Navications sections
+-------------------------*/
+.navications {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3%;
+}
+.navication-left {
+  font-size: 20px;
+  font-weight: 700;
+  color: #393838;
+  margin-left: 10%;
+}
+.navication-right {
+  margin-right: 10%;
+}
+.navication-right a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #393838;
+  margin-right: 30px;
+}
+.fa-magnifying-glass,
+.fa-cart-shopping {
+  font-size: 20px;
+}
+
 /*----------------------
     Influencer-details
 ------------------------ */
