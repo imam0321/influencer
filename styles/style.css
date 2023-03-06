@@ -179,7 +179,6 @@ span {
   justify-content: center;
   margin-top: 10%;
   margin-bottom: 10%;
-  
 }
 .future-product-banne img {
   width: 60%;
@@ -273,7 +272,6 @@ span {
   .future-products {
     width: 100%;
     flex-direction: column-reverse;
-   
   }
   .future-product-banne {
     width: 100%;
@@ -286,5 +284,4 @@ span {
     text-align: center;
     padding-bottom: 10%;
   }
-  
 }
