@@ -5,27 +5,28 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  width: 1349px;
 }
 
 /*------------------------ 
     Navications sections
 -------------------------*/
-.navications {
+.navigations {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 3%;
 }
-.navication-left {
+.navigation-left {
   font-size: 20px;
   font-weight: 700;
   color: #393838;
   margin-left: 10%;
 }
-.navication-right {
+.navigation-right {
   margin-right: 10%;
 }
-.navication-right a {
+.navigation-right a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -76,6 +77,9 @@ body {
 .influenc-banner {
   width: 40%;
 }
+.influenc-banner img {
+  width: 100%;
+}
 
 /*------------------------ 
     online portal sections
@@ -113,12 +117,11 @@ hr {
   margin-bottom: 3%;
 }
 .products {
-  width: 1000px;
-  margin-left: 14%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  gap: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .product-detail {
   padding: 10px;
@@ -173,18 +176,17 @@ span {
 
 .future-products {
   display: flex;
+  justify-content: center;
   margin-top: 10%;
   margin-bottom: 10%;
-}
-.future-product-banner {
-  margin-left: 12%;
-  margin-right: 5%;
+  
 }
 .future-product-banne img {
-  width: 30%;
+  width: 60%;
 }
 .future-product-info {
   width: 40%;
+  padding-left: 5%;
 }
 .future-product-title {
   font-size: 2em;
@@ -234,4 +236,55 @@ span {
   padding: 8px;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+/*--------------------
+   Midea Queries 
+----------------------*/
+
+/*---------------- 
+    Mobile Devices
+-------------------*/
+@media only screen and (max-width: 687px) {
+  body {
+    width: 100%;
+  }
+  .navigations {
+    width: 100%;
+  }
+  .influencer-details {
+    flex-direction: column-reverse;
+  }
+  .influenc-details {
+    text-align: center;
+    width: 100%;
+  }
+  .online-portal-author {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .products {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  .future-products {
+    width: 100%;
+    flex-direction: column-reverse;
+   
+  }
+  .future-product-banne {
+    width: 100%;
+  }
+  .future-product-banne img {
+    width: 100%;
+  }
+  .future-product-info {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10%;
+  }
+  
 }
