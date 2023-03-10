@@ -15,17 +15,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3%;
+  height: 150px;
+  margin: 0 10% 0 10%;
 }
 .navigation-left {
   font-size: 20px;
   font-weight: 700;
   color: #393838;
-  margin-left: 10%;
 }
-.navigation-right {
-  margin-right: 10%;
-}
+/* .navigation-right {
+} */
 .navigation-right a {
   text-decoration: none;
   font-size: 16px;
@@ -44,7 +43,7 @@ body {
 
 .influencer-details {
   display: flex;
-  margin: 10% 0 6% 10%;
+  margin: 5% 0 6% 10%;
 }
 .influenc-details {
   width: 45%;
@@ -74,11 +73,8 @@ body {
 .fa-arrow-right.icon-1 {
   padding-left: 3px;
 }
-.influenc-banner {
+.influence-banner {
   width: 40%;
-}
-.influenc-banner img {
-  width: 100%;
 }
 
 /*------------------------ 
@@ -180,9 +176,6 @@ span {
   margin-top: 10%;
   margin-bottom: 10%;
 }
-.future-product-banne img {
-  width: 60%;
-}
 .future-product-info {
   width: 40%;
   padding-left: 5%;
@@ -245,24 +238,61 @@ span {
     Mobile Devices
 -------------------*/
 @media only screen and (max-width: 687px) {
-  body {
+  body,
+  .navigation-left,
+  .navigation-right,
+  .influenc-details,
+  .influence-banner,
+  .future-product-banner,
+  .contracts {
     width: 100%;
   }
   .navigations {
-    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
   }
+  .navigation-left {
+    font-size: 16px;
+  }
+  .navigation-right a {
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
   .influencer-details {
     flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 10%;
   }
   .influenc-details {
     text-align: center;
-    width: 100%;
+    margin-bottom: 10%;
+  }
+  .influenc-title {
+    font-size: 2em;
+  }
+  .influenc-thumnail {
+    font-weight: 500;
+  }
+  .influence-banner {
+    margin-left: 15%;
+  }
+  .influence-banner img {
+    width: 80%;
+  }
+
+  hr {
+    margin: 0 2%;
   }
   .online-portal-author {
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    align-items: center;
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    margin: 5% 10%;
+  }
+  .hiden {
+    display: none;
   }
   .products {
     grid-template-columns: repeat(1, 1fr);
@@ -270,18 +300,19 @@ span {
     align-items: center;
   }
   .future-products {
-    width: 100%;
     flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
   }
-  .future-product-banne {
-    width: 100%;
-  }
-  .future-product-banne img {
-    width: 100%;
+  .future-product-banner img {
+    width: 80%;
   }
   .future-product-info {
-    width: 100%;
+    width: 80%;
     text-align: center;
-    padding-bottom: 10%;
+    margin-bottom: 10%;
+  }
+  .future-product-title {
+    font-size: 1.5em;
   }
 }
